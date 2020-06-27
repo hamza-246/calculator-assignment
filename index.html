@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div class="main">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+        <div>
+            <input type="text" name="" id="tex" class="text">
+        </div>
+
+        <div>
+            <button class="num-btn" onclick="callNumber('%')">%</button>
+            <button class="num-btn" onclick="clea()">C</button>
+            <button class="num-btn" onclick="backsp()"><i class='fas fa-backspace' style='font-size:16px;color: white;'></i></button>
+            <button class="sign-btn" onclick="callNumber('/')">÷</button>
+        </div>
+
+        <div>
+            <button class="num-btn" onclick="callNumber(7)">7</button>
+            <button class="num-btn" onclick="callNumber(8)">8</button>
+            <button class="num-btn" onclick="callNumber(9)">9</button>
+            <button class="mul-btn" onclick="callNumber('*')">X</button>
+        </div>
+
+        <div>
+            <button class="num-btn" onclick="callNumber(4)">4</button>
+            <button class="num-btn" onclick="callNumber(5)">5</button>
+            <button class="num-btn" onclick="callNumber(6)">6</button>
+            <button class="mul-btn" onclick="callNumber('-')">-</button>
+        </div>
+
+        <div>
+            <button class="num-btn" onclick="callNumber(1)">1</button>
+            <button class="num-btn" onclick="callNumber(2)">2</button>
+            <button class="num-btn" onclick="callNumber(3)">3</button>
+            <button class="mul-btn" onclick="callNumber('+')">+</button>
+        </div>
+
+        <div>
+            <button class="sign2-btn" onclick="callNumber(0)">0</button>
+            <button class="sign2-btn" onclick="callNumber('.')">.</button>
+            <button class="sign3-btn" onclick="result()">=</button>
+
+        </div>
+
+    </div>
+        </div> 
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
